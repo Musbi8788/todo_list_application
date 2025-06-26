@@ -12,8 +12,8 @@ def index(response, id):
     if response.method == "POST":
         print(response.POST)
         if response.POST.get("save"):
-            for item in ls.item_set.all():
-                if response.POST.get("c" + str(item.id)) == "clicked":
+            for item in ls.item_set.all(): # get all the items in the list
+                if response.POST.get("c" + str(item.id))== "clicked": # get the item and set the status to complete
                     item.complete = True
                 else:
                     item.complete = False
@@ -21,11 +21,14 @@ def index(response, id):
                 item.save()
 
         elif response.POST.get("newItem"):
-            txt = response.POST.get("message")
+            txt = response.POST.get('message') # get the message input
+
             if len(txt) > 2:
                 ls.item_set.create(text=txt, complete=False)
             else:
-                print("invalid input")
+                print("Invalid Input!!")
+
+
 
     return render(response, "main/list.html", {"ls":ls})
 
