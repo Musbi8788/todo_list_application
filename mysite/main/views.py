@@ -28,6 +28,10 @@ def index(response, id):
             else:
                 print("Invalid Input!!")
 
+        elif response.POST.get("deleteItem"):
+            for delete_item in ls.item_set.all():
+                if response.POST.get("c" + str(delete_item.id)):
+                    delete_item.delete()
 
 
     return render(response, "main/list.html", {"ls":ls})

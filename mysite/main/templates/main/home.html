@@ -1,9 +1,12 @@
 {% extends 'main/base.html' %}
 
+{% load static %}
+
 {% block title%}
 Home
 {% endblock %}
 
 {% block content%}
 <h1>Welcome to To Do List Web App!!</h1>
+<img src="{% static 'todo.jpg' %}" alt="to do list">
 {% endblock %}

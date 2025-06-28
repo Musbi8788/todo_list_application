@@ -6,8 +6,13 @@
 <h3>Create List</h3>
 <form method="post" action="/create/" class="form-group">
     {% csrf_token %}
-    {{form.as_p}}
-    <button type="submit" name="save" class="btn btn-success ">Create New</button>
+    <div class="input-group mb-3">
+    
+    <div class="input-group-prepend">
+    <button type="submit" name="save" class="btn btn-success mb-1 mr-1">Create New</button>
+</div>
+{{form.name}}
+    </div>
 </form>
 
 
