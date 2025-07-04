@@ -121,10 +121,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-# Adding crispy template 
+# Adding crispy template
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# redirect to home page after logging in
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
