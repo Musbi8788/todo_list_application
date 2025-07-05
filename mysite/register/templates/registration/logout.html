@@ -5,13 +5,12 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<a href="{% url 'logout' %}" class="btn btn-danger">Log Out</a>
-<!-- <form action="{% url 'logout' %}" class="form-group" method="POST">
+<form action="{% url 'logout' %}" class="form-group" method="POST">
     {% csrf_token %}
     
     <button type="submit" class="btn btn-success">
         Log Out
     </button>
-</form> -->
+</form>
 
 {% endblock %}
