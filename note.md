@@ -14,3 +14,10 @@ display todo list in the views
 ```
 
 we loop through todo and get todo id and name
+
+i run to an error when trying to create a todolist but the problem was i'm using response instead of request here's how i fix it
+
+```
+if request.user.is_authenticated:
+            request.user.todolist.add(name=t)
+```
