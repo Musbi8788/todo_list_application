@@ -2,7 +2,7 @@
 {% block title %}List of Views{% endblock %}
 
 {% block content %}
-  {% for td in user.todolist_set %}
-    <p><a href="{{td.id}}"></a>{{td.name}}</p>
-  {% endfor %}
+    {% for td in user.todolist.all %}
+        <p><a href="{{td.id}}"></a>{{td.name}}</p>
+    {% endfor %}
 {% endblock %}
