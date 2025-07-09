@@ -38,7 +38,7 @@ def index(response, id):
 
 
 def home(response):
-    return render(response, "main/home.html", {"name": "Test"})
+    return render(response, "main/home.html", {})
 
 def create(response):
     if response.method == "POST":
@@ -46,9 +46,13 @@ def create(response):
 
         if form.is_valid():
             n = form.cleaned_data['name']
-            t = ToDoList(name=n)
-            t.save()
+            # create each user's todo list
+            response.user.todolist_set.create(name=n)
         return HttpResponseRedirect("/%i" %t.id) #type: ignore
     else:
         form = CreateNewList()
     return render(response, "main/create.html", {"form": form})
+
+
+def view(repsonse):
+    return render(repsonse, "main/view.html", {})
