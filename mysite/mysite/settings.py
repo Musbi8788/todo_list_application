@@ -133,3 +133,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # redirect to home page after logging in / out
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
+
+# render.compip install gunicorn
+ALLOWED_HOSTS = ['.onrender.com']
