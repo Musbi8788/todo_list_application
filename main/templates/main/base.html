@@ -42,12 +42,17 @@
         <a href="/">Home</a>
         <a href="/create">Create</a>
         <a href="/view">View</a>
-        <a href="/register/">Register</a>
+        {% if user.is_authenticated %} 
+                <a href="/logout">Logout</a>
+            {% else %} 
+                <a href="/register">Register</a>
+        {% endif %} 
+        
     </div>
     <div id="content" name="content" class="main">
         <div class="row justify-content-center">
             <div class="col-8">
-                <h1 class="mt-2">Musbi's To Do List</h1>
+                <h1 class="mt-2">Musbi's ToDo List App</h1>
                 <hr class="mt-0 mb-4">
                 <!-- check if the user is authenticated or not -->
                 {# {% if user.is_authenticated %} #}
