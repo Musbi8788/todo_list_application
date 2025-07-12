@@ -2,7 +2,7 @@ This is my first Django mini project — a simple web-based To-Do List app where
 
 
 ##  Live Demo
-👉 [text](https://todo-list-application-1m2w.onrender.com/)
+👉 [Click here to use the app live on Render](https://todo-list-application-1m2w.onrender.com/)
 
 ⚠️ Note: You must be logged in to create or view to-do lists
 
@@ -26,15 +26,15 @@ This is my first Django mini project — a simple web-based To-Do List app where
 
 ``` Create Page (After Login) ```
 
-![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/after.png
+![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/after.png)
 
 ``` Register Page ```
 
-![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/register.png
+![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/register.png)
 
 ``` To-Do List Page ```
 
-![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/todo.png
+![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/todo.png)
 
 ## Project Structure
 - ```main/ ```– Handles the home page, view list, and create list views
