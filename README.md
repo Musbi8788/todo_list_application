@@ -1,30 +1,67 @@
-# TODo list application
-This is my first django mini project
+This is my first Django mini project — a simple web-based To-Do List app where users can register, log in, and manage their personal tasks.
+
+
+##  Live Demo
+👉 [text](https://todo-list-application-1m2w.onrender.com/)
+
+⚠️ Note: You must be logged in to create or view to-do lists
+
+## Features
+
+- User registration & login
+
+- Create your own to-do lists (after logging in)
+
+- View tasks associated with your account
+
+- Secure user-based task management
 
 ## Screenshot
-``` home page```
+``` Home Page```
 ![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/home.png)
 
-``` create page before logging in ```
+``` Create Page (Before Login) ```
+
 ![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/create.png
 
-``` create page after logging in ```
+``` Create Page (After Login) ```
+
 ![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/after.png
 
-``` register page ```
+``` Register Page ```
+
 ![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/register.png
 
-``` to do list ```
+``` To-Do List Page ```
+
 ![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/todo.png
 
+## Project Structure
+- ```main/ ```– Handles the home page, view list, and create list views
+
+- ```mysite/ ```– The root Django project folder that manages routing and settings
+
+- ```register/``` – Handles user registration functionality
 
 
+## How it works
 
-## How the project works
- 1. ``` main ``` folder respond to the the home, view, and create page
- 2. ``` mysite ``` folder respond for the project root such as rendering pages 
- 3. ``` register `` folder respond for registrations 
+1. Visit the home page.
 
-To create a to do list first you need to create an account if you don't have it otherwise you can't view or create to do list 
+2. If you're not logged in, you can only view limited pages.
 
+3. To create and manage your own to-do list:
+
+  - Register for an account or log in if you already have one.
+
+  - Once logged in, you can create a new to-do list.
+
+  - View your created lists and manage them as needed.
+
+## Access Control
+🔒 You must be logged in to:
+
+Create a new to-do list
+
+View your existing to-do lists
 
