@@ -44,11 +44,10 @@ def index(request, id):
 def home(request):
     return render(request, "main/home.html", {})
 
-@login_required
+@login_required(login_url="login")
 def create(request):
     if request.method == "POST":
         form = CreateNewList(request.POST)
-
         if form.is_valid():
             n = form.cleaned_data['name']
             # create each user's todo list
@@ -62,6 +61,6 @@ def create(request):
     return render(request, "main/create.html", {"form": form})
 
 
-@login_required
+# @login_required
 def view(request):
     return render(request, "main/view.html", {"user": request.user})
