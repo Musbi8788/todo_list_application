@@ -44,7 +44,7 @@ def index(request, id):
 def home(request):
     return render(request, "main/home.html", {})
 
-
+@login_required
 def create(request):
     if request.method == "POST":
         form = CreateNewList(request.POST)
@@ -62,6 +62,6 @@ def create(request):
     return render(request, "main/create.html", {"form": form})
 
 
-# @login_required
+@login_required
 def view(request):
     return render(request, "main/view.html", {"user": request.user})
