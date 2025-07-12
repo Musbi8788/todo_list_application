@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
-from .models import ToDoList, Item
+from .models import ToDoList, Item, User
 from .form import CreateNewList
 from django.contrib.auth.decorators import login_required
 
@@ -51,7 +51,8 @@ def create(request):
         if form.is_valid():
             n = form.cleaned_data['name']
             # create each user's todo list
-            t = ToDoList(name=n, user=request.user)
+            # t = ToDoList(name=n, user=request.user)
+            t = User(name=n, user=request.user)
             t.save()
             if request.user.is_authenticated:
                 request.user.todolist.add(t)
