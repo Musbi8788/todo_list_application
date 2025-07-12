@@ -3,20 +3,21 @@ This is my first django mini project
 
 ## Screenshot
 ``` home page```
-![screenshot](https://github.com/Musbi8788/rain_drop/blob/images/home.png)
+![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/home.png)
 
 ``` create page before logging in ```
-![alt text](image.png)
+![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/create.png
 
 ``` create page after logging in ```
-
+![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/after.png
 
 ``` register page ```
+![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/register.png
 
 ``` to do list ```
+![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/todo.png
 
 
-    
 
 
 ## How the project works
