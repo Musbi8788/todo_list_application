@@ -42,11 +42,8 @@
         <a href="/">Home</a>
         <a href="/create">Create</a>
         <a href="/view">View</a>
-        {% if user.is_authenticated %} 
-                <a href="/logout">Logout</a>
-            {% else %} 
-                <a href="/register">Register</a>
-        {% endif %} 
+        <a href="/register">Register</a>
+
         
     </div>
     <div id="content" name="content" class="main">
