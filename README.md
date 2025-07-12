@@ -22,7 +22,7 @@ This is my first Django mini project — a simple web-based To-Do List app where
 
 ``` Create Page (Before Login) ```
 
-![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/create.png
+![screenshot](https://github.com/Musbi8788/todo_list_application/blob/main/images/create.png)
 
 ``` Create Page (After Login) ```
 
