@@ -5,7 +5,7 @@
 {% block title %}Create an Account{% endblock %}
 
 {% block content %}
-<img src="{% static 'register/images/register.jpg' %}" alt="" width="500">
+<img src="{% static 'register/images/register.jpg' %}" class="img-fluid" alt="" >
     <form method="POST" class="form-group">
     {% csrf_token %}
         {{ form|crispy }}
